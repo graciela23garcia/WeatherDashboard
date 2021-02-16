@@ -6,21 +6,41 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <title>Weather Dashboard</title>
+    <title> Weather Dashboard </title>
 </head>
 <body>
-    <header class="jumbotron text-center">
-        <h1 class="display-3">Weather Dashboard</h1>
+    <header class= "jumbotron text-center">
+        <h1 class= "display-3">
+            Weather Dashboard
+        </h1>
     </header>
 
-<h1>Search for a City: </h1>
-<input id="cityName" type="text" placeholder="City Name"></input>
-<button id="submitWeather" class ="btn" >icon</button>
-    
-   
-   
-    <script src="script.js"></script>
+<h1> Search for a City: </h1>
+<input id= "cityName" type= "text" placeholder= "City Name" ></input>
+<button id= "submitWeather" class = "btn"> Search </button>
 
+<div class="col-lg-9 pb-5">
+    <div class="row" id="weatherToday">
+      <div class="col-lg-12">
+        <h2 class="current-city"> City (Month DD, YYYY)</h2>
+        <p id= "temp"> Tempeture: </p>
+        <p id= "humi"> Humidity: </p>
+        <p id= "wind"> Wind speed: </p>
+        <p id= "uvi"> UV-index: </p>
+      </div>
+</div>
+<div class="row">
+    <div class="col">
+      <h2>5-Day Forecast:</h2>
+    </div>
+  </div>
+  <div class="row justify-content-between" id="fiveDayforecast" >    
+    </div>
+  </div>
+</div>
+</div>
+</div> 
+<script src="script.js"></script>
 </body>
 </html>
 
